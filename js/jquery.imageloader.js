@@ -1,0 +1,1 @@
+!function(n){n.imageloader=function(o){var r=n.extend({urls:[],onComplete:function(){},onUpdate:function(n,o){},onError:function(n){}},o),e=0,t=r.urls,a=t.length;n.each(t,function(o,i){var c=new Image;c.src=i,c.onerror=function(){e++,r.onError("Error loading image: "+i)},n("<img/>").attr("src",i).load(function(n){e++,r.onUpdate(e/a,t[e-1]),e===a&&r.onComplete()})})}}(jQuery);
