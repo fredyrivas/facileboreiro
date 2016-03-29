@@ -1,0 +1,121 @@
+
+.absoluto{
+  position: absolute;
+}
+
+.relativo{
+  position: relative;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.white{
+  color: white;
+}
+
+.boldy{
+  font-weight: bold;
+}
+
+
+.size-0-5{font-size: .5rem;}
+.size-0-6{font-size: .6rem;}
+.size-0-7{font-size: .7rem;}
+.size-0-8{font-size: .8rem;}
+.size-0-9{font-size: .9rem;}
+.size-1-0{font-size: 1rem;}
+.size-1-1{font-size: 1.1rem;}
+.size-1-2{font-size: 1.2rem;}
+.size-1-3{font-size: 1.3rem;}
+.size-1-4{font-size: 1.4rem;}
+.size-1-5{font-size: 1.5rem;}
+.size-1-6{font-size: 1.6rem;}
+.size-1-7{font-size: 1.7rem;}
+.size-1-8{font-size: 1.8rem;}
+.size-1-9{font-size: 1.9rem;}
+.size-2-0{font-size: 2rem;}
+.size-2-1{font-size: 2.1rem;}
+.size-2-2{font-size: 2.2rem;}
+.size-2-3{font-size: 2.3rem;}
+.size-2-4{font-size: 2.4rem;}
+.size-2-5{font-size: 2.5rem;}
+.size-2-6{font-size: 2.6rem;}
+.size-2-7{font-size: 2.7rem;}
+.size-2-8{font-size: 2.8rem;}
+.size-2-9{font-size: 2.9rem;}
+.size-3-0{font-size: 3rem;}
+
+.pleft-10{padding-left: 10px;}
+.pleft-20{padding-left: 20px;}
+.pleft-30{padding-left: 30px;}
+.pleft-40{padding-left: 40px;}
+.pleft-50{padding-left: 50px;}
+.pleft-60{padding-left: 60px;}
+.pleft-70{padding-left: 70px;}
+.pleft-80{padding-left: 80px;}
+.pleft-90{padding-left: 90px;}
+.pleft-100{padding-left: 100px;}
+
+
+.mtop-10{margin-top: 10px;}
+.mtop-20{margin-top: 20px;}
+.mtop-30{margin-top: 30px;}
+.mtop-40{margin-top: 40px;}
+.mtop-50{margin-top: 50px;}
+.mtop-60{margin-top: 60px;}
+.mtop-70{margin-top: 70px;}
+.mtop-80{margin-top: 80px;}
+.mtop-90{margin-top: 90px;}
+.mtop-100{margin-top: 100px;}
+
+
+.mbottom-10{margin-bottom: 10px;}
+.mbottom-20{margin-bottom: 20px;}
+.mbottom-30{margin-bottom: 30px;}
+.mbottom-40{margin-bottom: 40px;}
+.mbottom-50{margin-bottom: 50px;}
+.mbottom-60{margin-bottom: 60px;}
+.mbottom-70{margin-bottom: 70px;}
+.mbottom-80{margin-bottom: 80px;}
+.mbottom-90{margin-bottom: 90px;}
+.mbottom-100{margin-bottom: 100px;}
+
+
+
+
+$iphone: "(min-width: 300px) and (max-width: 599px)";
+$mini-tablet: "(min-width: 600px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1024px)";
+$desktop: "(min-width: 1025px)";
+
+
+$iphone-width: 320px;
+$minitablet-width: 600px;
+$tablet-width: 768px;
+$desktop-width: 1025px;
+
+@mixin iphone {
+  @media (min-width: #{$iphone-width}) and (max-width: #{$minitablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin minitablet {
+  @media (min-width: #{$minitablet-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

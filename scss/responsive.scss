@@ -1,0 +1,75 @@
+
+/*IPHONE-----------------------------------------------------------------------------------------------*/
+
+@include iphone {
+
+  /* ----------NOSOTROS -----*/
+  .nosotros-image{
+    text-align: center;
+  }
+  .nosotros-text{
+    height: auto;
+    overflow: auto;
+  }
+
+
+  /*PROYECTIOS*/
+  .project-cover-info{
+    bottom: -10px;
+  }
+
+  .project-name{
+    font-size: 1.1rem;
+    line-height: .3rem;
+  }
+  .project-description{
+    font-size: .8rem;
+  }
+
+
+  .info-contact{
+    line-height: 1rem !important;
+  }
+
+}
+
+/*MINI TABLET-----------------------------------------------------------------------------------------------*/
+@include minitablet {
+
+  /* ----------NOSOTROS -----*/
+  .nosotros-text p{
+    padding-right: 10px;
+  }
+  .nosotros-text{
+    height: 350px;
+  }
+
+
+
+}
+
+
+/*TABLET-----------------------------------------------------------------------------------------------*/
+@include tablet {
+
+  /* ----------NOSOTROS -----*/
+  .nosotros-text p{
+    padding-right: 30px;
+  }
+
+
+}
+
+
+/*DESKTOP-----------------------------------------------------------------------------------------------*/
+@include desktop {
+
+  /* ----------NOSOTROS -----*/
+  .nosotros-text p{
+    padding-right: 130px;
+  }
+
+}
+
+
+
