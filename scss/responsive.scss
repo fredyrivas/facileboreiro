@@ -31,6 +31,44 @@
     line-height: 1rem !important;
   }
 
+
+
+  /*procesos*/
+
+  .new-proceso{
+    min-height: 80px;
+  }
+
+  .procesos-img-thumb{
+    width: 60px;
+  }
+
+  .proceso-title-comp{
+    /*@include absolute-center();*/
+
+    right: 20px;
+  }
+
+  .proceso-name {
+    font-size: .7rem !important;
+    padding-right: 10px !important;
+    vertical-align: baseline !important;
+  }
+
+
+
+  /*proyectos*/
+
+  .size-1-4{
+    font-size: 1.2rem;
+  }
+  .size-1-2{
+    font-size: .9rem;
+  }
+  .size-0-9{
+    font-size: .8rem;
+  }
+
 }
 
 /*MINI TABLET-----------------------------------------------------------------------------------------------*/
@@ -45,6 +83,28 @@
   }
 
 
+
+  /*procesos*/
+
+  .new-proceso{
+    min-height: 80px;
+  }
+
+  .procesos-img-thumb{
+    width: 60px;
+  }
+
+  .proceso-title-comp{
+    /*@include absolute-center();*/
+
+    right: 20px;
+  }
+
+  .proceso-name {
+    font-size: .7rem !important;
+    padding-right: 10px !important;
+    vertical-align: baseline !important;
+  }
 
 }
 

@@ -14,25 +14,11 @@
 <?php include_once 'includes/header.php' ?>
 
 
-<div class="section-wrapper" data-page="proyecto">
+<div class="section-wrapper" data-page="proyecto" data-proyecto="ph-andersen">
 
     <div class="proyecto-slick">
 
-        <!--div.slick-foto-landscape*12>img[src=images/proyectos/ph-andersen/ph-andersen-$.jpg alt=ph-andersen-$]-->
-
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-1.jpg" alt="ph-andersen-1"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-2.jpg" alt="ph-andersen-2"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-3.jpg" alt="ph-andersen-3"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-4.jpg" alt="ph-andersen-4"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ph-andersen/ph-andersen-5.jpg" alt="ph-andersen-5"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-6.jpg" alt="ph-andersen-6"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ph-andersen/ph-andersen-7.jpg" alt="ph-andersen-7"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-8.jpg" alt="ph-andersen-8"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-9.jpg" alt="ph-andersen-9"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ph-andersen/ph-andersen-10.jpg" alt="ph-andersen-10"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ph-andersen/ph-andersen-11.jpg" alt="ph-andersen-11"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ph-andersen/ph-andersen-12.jpg" alt="ph-andersen-12"/></div>
-
+        <!--dynamic content here-->
 
     </div>
 

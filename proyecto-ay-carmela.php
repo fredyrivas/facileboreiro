@@ -14,26 +14,11 @@
 <?php include_once 'includes/header.php' ?>
 
 
-<div class="section-wrapper" data-page="proyecto">
+<div class="section-wrapper" data-page="proyecto" data-proyecto="ay-carmela">
 
     <div class="proyecto-slick">
 
-        <!--div.slick-foto-landscape*12>img[src=images/proyectos/ay-carmela/ay-carmela-$.jpg alt=ay-carmela-$]-->
-
-        <div class="slick-foto-landscape"><img src="images/proyectos/ay-carmela/ay-carmela-1.jpg" alt="ay-carmela-1"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ay-carmela/ay-carmela-2.jpg" alt="ay-carmela-2"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-3.jpg" alt="ay-carmela-3"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ay-carmela/ay-carmela-4.jpg" alt="ay-carmela-4"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-5.jpg" alt="ay-carmela-5"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-6.jpg" alt="ay-carmela-6"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-7.jpg" alt="ay-carmela-7"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-8.jpg" alt="ay-carmela-8"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-9.jpg" alt="ay-carmela-9"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-10.jpg" alt="ay-carmela-10"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/ay-carmela/ay-carmela-11.jpg" alt="ay-carmela-11"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/ay-carmela/ay-carmela-12.jpg" alt="ay-carmela-12"/></div>
-
-
+        <!--dynamic content here-->
     </div>
 
 

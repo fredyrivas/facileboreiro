@@ -14,26 +14,10 @@
 <?php include_once 'includes/header.php' ?>
 
 
-<div class="section-wrapper" data-page="proyecto">
+<div class="section-wrapper" data-page="proyecto" data-proyecto="la-mallorquina">
 
     <div class="proyecto-slick">
-
-        <!--div.slick-foto-landscape*12>img[src=images/proyectos/la-mallorquina/la-mallorquina-$.jpg alt=la-mallorquina-$]-->
-
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-1.jpg" alt="la-mallorquina-1"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-2.jpg" alt="la-mallorquina-2"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-3.jpg" alt="la-mallorquina-3"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-4.jpg" alt="la-mallorquina-4"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-5.jpg" alt="la-mallorquina-5"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-6.jpg" alt="la-mallorquina-6"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/la-mallorquina/la-mallorquina-7.jpg" alt="la-mallorquina-7"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-8.jpg" alt="la-mallorquina-8"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-9.jpg" alt="la-mallorquina-9"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/la-mallorquina/la-mallorquina-10.jpg" alt="la-mallorquina-10"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/la-mallorquina/la-mallorquina-11.jpg" alt="la-mallorquina-11"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/la-mallorquina/la-mallorquina-12.jpg" alt="la-mallorquina-12"/></div>
-
-
+        <!--dynamic content here-->
     </div>
 
 

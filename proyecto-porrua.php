@@ -14,17 +14,11 @@
 <?php include_once 'includes/header.php' ?>
 
 
-<div class="section-wrapper" data-page="proyecto">
+<div class="section-wrapper" data-page="proyecto" data-proyecto="porrua">
 
     <div class="proyecto-slick">
 
-        <!--div.slick-foto-landscape*12>img[src=images/proyectos/porrua/porrua-$.jpg alt=porrua-$]-->
-
-        <div class="slick-foto-portrait"><img src="images/proyectos/porrua/porrua-1.jpg" alt="porrua-1"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/porrua/porrua-2.jpg" alt="porrua-2"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/porrua/porrua-3.jpg" alt="porrua-3"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/porrua/porrua-4.jpg" alt="porrua-4"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/porrua/porrua-5.jpg" alt="porrua-5"/></div>
+        <!--dynamic content here-->
 
     </div>
 

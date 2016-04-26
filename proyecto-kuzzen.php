@@ -14,20 +14,11 @@
 <?php include_once 'includes/header.php' ?>
 
 
-<div class="section-wrapper" data-page="proyecto">
+<div class="section-wrapper" data-page="proyecto" data-proyecto="kuzzen">
 
     <div class="proyecto-slick">
 
-        <!--div.slick-foto-landscape*12>img[src=images/proyectos/kuzzen/kuzzen-$.jpg alt=kuzzen-$]-->
-
-        <div class="slick-foto-landscape"><img src="images/proyectos/kuzzen/kuzzen-1.jpg" alt="kuzzen-1"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/kuzzen/kuzzen-2.jpg" alt="kuzzen-2"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/kuzzen/kuzzen-3.jpg" alt="kuzzen-3"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/kuzzen/kuzzen-4.jpg" alt="kuzzen-4"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/kuzzen/kuzzen-5.jpg" alt="kuzzen-5"/></div>
-        <div class="slick-foto-portrait"><img src="images/proyectos/kuzzen/kuzzen-6.jpg" alt="kuzzen-6"/></div>
-        <div class="slick-foto-landscape"><img src="images/proyectos/kuzzen/kuzzen-7.jpg" alt="kuzzen-7"/></div>
-
+        <!--dynamic content here-->
 
     </div>
 

@@ -22,7 +22,9 @@ $(document).ready(function () {
                 autoplaySpeed: 4000,
 
                 prevArrow: $('.prev-arrow-home'),
-                nextArrow: $('.next-arrow-home')
+                nextArrow: $('.next-arrow-home'),
+
+                swipeToSlide: true
             });
 
             break;
@@ -37,27 +39,20 @@ $(document).ready(function () {
 
             /*$('.submenu').css('position', 'relative', 'important');*/
 
-            $('.proyecto-slick').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-
-                fade: true,
-                dots: false,
-                arrows: true,
-
-                prevArrow: $('.prev-arrow-proyecto'),
-                nextArrow: $('.next-arrow-proyecto')
-            });
-
-            $('.slick-list').css('height', '100%');
+            $('.proyecto-slick').height($(window).height() - 160);
+            $('.project-details').height($(window).height() - 160);
 
 
-            $(window).load(function(){
-                $('.mas-info-icon').empty().append('<img src="images/mas-info-icon.svg" alt="icon" width="15"/>');
-                setProjectDetails();
+            var newProyectoname = 'proyecto-' + $('.section-wrapper').data('proyecto');
+            loadProjectImagesJson(newProyectoname);
 
-                $('.proyecto-info').addClass('pointer');
+
+            $(window).resize(function () {
+
+                $('.proyecto-slick').height($(window).height() - 160);
+                $('.project-details').height($(window).height() - 160);
+
+                resizeGalerias();
             });
 
             break;
@@ -67,12 +62,12 @@ $(document).ready(function () {
             initNosotrosScroll();
 
             var nosotrosIMG = $('<img src="images/nosotros.png" alt="nosotros"/>')
-            nosotrosIMG.load(function(e){
+            nosotrosIMG.load(function (e) {
                 $('.nosotros-image').append(nosotrosIMG);
                 resizeNosotrosText();
             });
 
-            $(window).resize(function(){
+            $(window).resize(function () {
                 resizeNosotrosText();
             });
 
@@ -83,7 +78,7 @@ $(document).ready(function () {
 
             resizeNoticias();
 
-            $(window).resize(function(){
+            $(window).resize(function () {
                 resizeNoticias();
             });
 
@@ -91,18 +86,67 @@ $(document).ready(function () {
 
         case 'procesos':
 
-            loadImagesJson('procesos1');
+            var newProcessName = 'proceso-' + $('.section-wrapper').data('proceso');
+            loadImagesJson(newProcessName);
 
             break;
 
         case 'contacto':
 
-            $('#contacto-mail').click(function(){
+            $('#contacto-mail').click(function () {
                 window.location.href = "mailto:taller@facileboreiro.com";
             });
 
             break;
 
+        case 'procesoshome':
+
+            $('.new-proceso').mouseover(function (e) {
+
+                if ($(window).width() > 600) {
+                    var text = $(e.currentTarget).find('.proceso-name');
+                    var back = $(e.currentTarget);
+
+                    TweenMax.to(text, .4, {color: "#FFFFFF"});
+                    TweenMax.to(back, .4, {backgroundColor: "#000000"});
+
+                    var nombre = $(e.currentTarget).data('procesonombre');
+                    var currima = $(e.currentTarget).find('.procesos-img-thumb');
+
+                    TweenMax.to($(currima), .2, {
+                        alpha: 0, onComplete: function () {
+                            $(currima).attr('src', 'images/proceso-btn-' + nombre + '-white.png');
+
+                            TweenMax.to($(currima), .2, {alpha: 1});
+                        }
+                    });
+                }
+            });
+
+
+            $('.new-proceso').mouseout(function (e) {
+                if ($(window).width() > 600) {
+                    var text = $(e.currentTarget).find('.proceso-name');
+                    var back = $(e.currentTarget);
+
+                    TweenMax.to(text, .4, {color: "#000000"});
+                    TweenMax.to(back, .4, {backgroundColor: "#ffffff"});
+
+                    var nombre = $(e.currentTarget).data('procesonombre');
+                    var currima = $(e.currentTarget).find('.procesos-img-thumb');
+
+                    TweenMax.to($(currima), .2, {
+                        alpha: 0, onComplete: function () {
+                            $(currima).attr('src', 'images/proceso-btn-' + nombre + '-black.png');
+
+                            TweenMax.to($(currima), .2, {alpha: 1});
+                        }
+                    });
+                }
+            });
+
+
+            break;
     }
 
 });
@@ -182,16 +226,136 @@ function toggleProjectDetails() {
 }
 
 
+function resizeGalerias() {
+    $('.slick-foto img').each(function () {
+        var maxWidth = $(window).width(); // Max width for the image
+        var maxHeight = $('.proyecto-slick').height();    // Max height for the image
+        var ratio = 0;  // Used for aspect ratio
+        var width = $(this).width();    // Current image width
+        var height = $(this).height();  // Current image height
+
+
+        // Check if the current width is larger than the max
+        //if(width > maxWidth){
+        ratio = maxWidth / width;   // get ratio for scaling image
+        $(this).css("width", maxWidth); // Set new width
+        $(this).css("height", height * ratio);  // Scale height based on ratio
+        height = height * ratio;    // Reset height to match scaled image
+        width = width * ratio;    // Reset width to match scaled image
+        //}
+
+        // Check if current height is larger than max
+        if (height > maxHeight) {
+            ratio = maxHeight / height; // get ratio for scaling image
+            $(this).css("height", maxHeight);   // Set new height
+            $(this).css("width", width * ratio);    // Scale width based on ratio
+            width = width * ratio;    // Reset width to match scaled image
+            height = height * ratio;    // Reset height to match scaled image
+        }
+    });
+}
+
+
+var imagesProjectJson;
+
+function loadProjectImagesJson($section) {
+    $.ajax({
+        url: 'json/images.json',
+        type: 'GET',
+        data: '',
+        success: function (data) {
+
+            imagesProjectJson = data;
+
+            var thisImages = imagesProjectJson[$section];
+            preloadProjectImges(thisImages);
+        },
+        error: function (e) {
+            //console.log(e.message);
+        }
+    });
+}
+
+function preloadProjectImges($imagesArray) {
+    var i = 0;
+
+    $.imageloader({
+        urls: $imagesArray,
+
+        smoothing: true,
+
+        onComplete: function () {
+            imagesProjectComplete();
+        },
+
+        onUpdate: function (ratio, image)///ratio: es el progress, image: es la imagen
+        {
+            i++;
+
+            var $newimg = $('<div class="slick-foto"><img src="' + image + '" alt="' + image + '"/></div>');
+
+            $newimg.appendTo('.proyecto-slick');
+
+            if (i == 1) {
+                TweenMax.fromTo($('.proyecto-slick'), .5, {alpha: 0}, {alpha: 1});
+            } else {
+                TweenMax.set($newimg, {alpha: 0});
+            }
+
+            resizeGalerias();
+
+        },
+
+        onError: function (err) {
+            console.log(err);
+        }
+    });
+}
+
+
+function imagesProjectComplete() {
+
+
+    ////iniciar slick
+    $('.proyecto-slick').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        fade: true,
+        dots: false,
+        arrows: true,
+
+        prevArrow: $('.prev-arrow-proyecto'),
+        nextArrow: $('.next-arrow-proyecto'),
+
+        swipeToSlide: true
+    });
+
+    $('.slick-list').css('height', '100%');
+
+    $('.proyecto-slick').height($(window).height() - 160);
+    $('.project-details').height($(window).height() - 160);
+
+
+    //////quitar preloader del bottom
+    $('.mas-info-icon').empty().append('<img src="images/mas-info-icon.svg" alt="icon" width="15"/>');
+    setProjectDetails();
+
+    $('.proyecto-info').addClass('pointer');
+}
+
+
 /*NOSOTROS -------------------------------------------------------------------------------------------------------------------*/
 
-function initNosotrosScroll(){
+function initNosotrosScroll() {
     console.log('kjoiñn');
     $('.nosotros-text').mCustomScrollbar();
 }
 
 
-function resizeNosotrosText(){
-    $('.nosotros-text').height( $('.nosotros-image img').height() );
+function resizeNosotrosText() {
+    $('.nosotros-text').height($('.nosotros-image img').height());
 
     console.log($('.nosotros-image img').height())
 }
@@ -199,11 +363,11 @@ function resizeNosotrosText(){
 
 /*NOTICIAS -------------------------------------------------------------------------------------------------------------------*/
 
-function resizeNoticias(){
-    $.each($('.noticias-type'), function(){
+function resizeNoticias() {
+    $.each($('.noticias-type'), function () {
 
         var newWidth = $(this).parent().width() - $(this).width();
-        $(this).parent().parent().find($('.noticias-hr')).width( newWidth - 15 );
+        $(this).parent().parent().find($('.noticias-hr')).width(newWidth - 15);
     });
 }
 
@@ -213,8 +377,6 @@ function resizeNoticias(){
 var imagesJson;
 
 function loadImagesJson($section) {
-
-    //TweenMax.to($('.preloader'),.3, {autoAlpha:0});
 
     $.ajax({
         url: 'json/images.json',
@@ -249,23 +411,15 @@ function preloadImges($imagesArray) {
         {
             i++;
 
-            var $newimg = $('<div class="procesos-item"><img src="'+image+'" alt="'+image+'"/></div>');
+            var $newimg = $('<div class="row new-proceso-img-page align-bottom">' +
+            '<div class="small-12 large-7 medium-11 columns large-centered medium-centered">' +
+            '<img src="' + image + '" alt="' + image + '"/>' +
+            '</div>' +
+            '</div>');
 
             $newimg.appendTo('.grid-procesos');
 
-            $('.grid-procesos').masonry( 'appended', $newimg );
-
-            $('.grid-procesos').masonry({
-                itemSelector: '.procesos-item',
-                columnWidth: 620,
-                gutter: 20,
-                isFitWidth: true,
-                transitionDuration: 0
-            });
-
-            TweenMax.from($newimg,.5, {delay:i *.1, alpha:0});
-
-            /*$($newimg).bind('click', openColorsMenu);*/
+            TweenMax.from($newimg, .5, {delay: i * .1, alpha: 0});
         },
 
         onError: function (err) {
@@ -275,7 +429,7 @@ function preloadImges($imagesArray) {
 }
 
 
-function imagesComplete(){
+function imagesComplete() {
 }
 
 
