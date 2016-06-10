@@ -256,19 +256,32 @@ function resizeGalerias() {
 }
 
 
+//http://localhost:50035/ProjectDetail?Id=54f728db-317c-4198-bc81-095d7f6601f3
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 var imagesProjectJson;
 
 function loadProjectImagesJson($section) {
+
+
     $.ajax({
-        url: 'json/images.json',
+        url: 'http://localhost:50035/Service/Service.json',
         type: 'GET',
-        data: '',
+        data: getParameterByName('Id'),
         success: function (data) {
 
             imagesProjectJson = data;
 
-            var thisImages = imagesProjectJson[$section];
-            preloadProjectImges(thisImages);
+            preloadProjectImges(imagesProjectJson[0].ImageUrls);
         },
         error: function (e) {
             //console.log(e.message);
