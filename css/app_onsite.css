@@ -4589,7 +4589,7 @@ html, body {
 
 .dinregular-font {
   font-family: "dinregular", Helvetica, Roboto, Arial, sans-serif;
-  color: white; }
+ }
 
 .dinmedium-font {
   font-family: "dinmedium", Helvetica, Roboto, Arial, sans-serif; }
@@ -4815,43 +4815,26 @@ html, body {
   width: 100px;
   margin: 10px auto; }
 
+
 .mobiliario-info {
-  overflow: scroll; }
-  .mobiliario-info p {
+    overflow: scroll; }
+.mobiliario-info p {
     text-align: justify; }
 
-.mobiliario-title {
-  position: absolute;
-  bottom: 37px;
-  right: 0;
-  height: 33px;
-  width: 100%; }
-
-/*.mobiliario-title-int{
-
-  width: 100%;
-
-  p{
-    float: right;
-    text-align: right;
-    background-color: rgba(10, 10, 10, 0.58);
-    padding: 0 20px;
-    color: white;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-  }
-}*/
 .mobiliario-img-title {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 37px; }
-  .mobiliario-img-title p {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 37px; }
+.mobiliario-img-title p {
     padding: 0 20px;
     color: white;
     text-transform: capitalize;
     font-size: 1.5rem; }
+
+
+
 
 /*PROYECTO TEMPLATE--------------------------------------------------------------------------------------------------*/
 .proyecto-slick {
@@ -5106,10 +5089,14 @@ NOTICIAS------------------------------------------------------------------------
     font-size: .9rem; }
   .size-0-9 {
     font-size: .8rem; }
-  .mobiliario-img-title {
-    height: 23px !important; }
+
+
+    .mobiliario-img-title {
+        height: 23px !important; }
     .mobiliario-img-title p {
-      font-size: 1rem !important; } }
+        font-size: 1rem !important; } }
+
+
 
 /*MINI TABLET-----------------------------------------------------------------------------------------------*/
 @media (min-width: 600px) and (max-width: 767px) {
@@ -5130,20 +5117,13 @@ NOTICIAS------------------------------------------------------------------------
     font-size: .7rem !important;
     padding-right: 10px !important;
     vertical-align: baseline !important; }
-  /*.mobiliario-title{
-    height: 23px;
-  }
 
-  .mobiliario-title-int{
 
-    p{
-      font-size: 1rem !important;
-    }
-  }*/
-  .mobiliario-img-title {
-    height: 23px !important; }
+    .mobiliario-img-title {
+        height: 23px !important; }
     .mobiliario-img-title p {
-      font-size: 1rem !important; } }
+        font-size: 1rem !important; } }
+
 
 /*TABLET-----------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {

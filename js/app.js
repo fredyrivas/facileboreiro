@@ -29,6 +29,46 @@ $(document).ready(function () {
 
             break;
 
+        case 'mobiliario':
+
+            $('.mobiliario-slick').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                fade: true,
+                dots: false,
+                arrows: true,
+
+                prevArrow: $('.prev-arrow-mobiliario'),
+                nextArrow: $('.next-arrow-mobiliario'),
+
+                swipeToSlide: true
+            });
+
+
+            $('.next-arrow-mobiliario').click(function(){
+                changeMobTitle('Nuevo Título Chido');
+            });
+
+            $('.prev-arrow-mobiliario').click(function(){
+                changeMobTitle('Nuevo Título Chido');
+            });
+
+
+
+            resizeMobiliarioText();
+            $(window).resize(function () {
+                resizeMobiliarioText();
+            });
+
+
+            break;
+
+
+
+
+
         case 'proyectoshome':
 
             setProjectsOvers();
@@ -70,6 +110,9 @@ $(document).ready(function () {
             $(window).resize(function () {
                 resizeNosotrosText();
             });
+
+
+
 
             break;
 
@@ -373,6 +416,23 @@ function resizeNosotrosText() {
     console.log($('.nosotros-image img').height())
 }
 
+
+function changeMobTitle(newtext){
+    $('.mobiliario-title-int p').html(newtext);
+}
+
+function resizeMobiliarioText() {
+
+    if($(window).width() >= 1024){
+        $('.mobiliario-info').height($('.mobiliario-slick').height());
+    }else{
+        $('.mobiliario-info').css('height', 'auto');
+        $('.mobiliario-info').css('overflow', 'auto');
+    }
+
+
+
+}
 
 /*NOTICIAS -------------------------------------------------------------------------------------------------------------------*/
 

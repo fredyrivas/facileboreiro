@@ -1,0 +1,128 @@
+{
+  "proceso-ay-carmela": [
+    "images/procesos/ay-carmela/1.jpg",
+    "images/procesos/ay-carmela/2.jpg",
+    "images/procesos/ay-carmela/3.jpg",
+    "images/procesos/ay-carmela/4.jpg",
+    "images/procesos/ay-carmela/5.jpg",
+    "images/procesos/ay-carmela/6.jpg",
+    "images/procesos/ay-carmela/7.jpg",
+    "images/procesos/ay-carmela/8.jpg"
+  ],
+  "proceso-glow-point": [
+    "images/procesos/glow-point/1.jpg",
+    "images/procesos/glow-point/2.jpg",
+    "images/procesos/glow-point/3.jpg",
+    "images/procesos/glow-point/4.jpg",
+    "images/procesos/glow-point/5.jpg",
+    "images/procesos/glow-point/6.jpg",
+    "images/procesos/glow-point/7.jpg",
+    "images/procesos/glow-point/8.jpg",
+    "images/procesos/glow-point/9.jpg"
+  ],
+  "proceso-jeronimo": [
+    "images/procesos/jeronimo/1.jpg",
+    "images/procesos/jeronimo/2.jpg",
+    "images/procesos/jeronimo/3.jpg",
+    "images/procesos/jeronimo/4.jpg",
+    "images/procesos/jeronimo/5.jpg",
+    "images/procesos/jeronimo/6.jpg",
+    "images/procesos/jeronimo/7.jpg"
+  ],
+  "proceso-mallorquina": [
+    "images/procesos/mallorquina/1.jpg",
+    "images/procesos/mallorquina/2.jpg",
+    "images/procesos/mallorquina/3.jpg",
+    "images/procesos/mallorquina/4.jpg",
+    "images/procesos/mallorquina/5.jpg",
+    "images/procesos/mallorquina/6.jpg",
+    "images/procesos/mallorquina/7.jpg",
+    "images/procesos/mallorquina/8.jpg",
+    "images/procesos/mallorquina/9.jpg"
+  ],
+  "proceso-ombues": [
+    "images/procesos/ombues/1.jpg",
+    "images/procesos/ombues/2.jpg",
+    "images/procesos/ombues/3.jpg",
+    "images/procesos/ombues/4.jpg",
+    "images/procesos/ombues/5.jpg",
+    "images/procesos/ombues/6.jpg"
+  ],
+  "proyecto-asics": [
+    "images/proyectos/asics/asics-1.jpg",
+    "images/proyectos/asics/asics-2.jpg",
+    "images/proyectos/asics/asics-3.jpg",
+    "images/proyectos/asics/asics-4.jpg",
+    "images/proyectos/asics/asics-5.jpg",
+    "images/proyectos/asics/asics-6.jpg",
+    "images/proyectos/asics/asics-7.jpg",
+    "images/proyectos/asics/asics-8.jpg",
+    "images/proyectos/asics/asics-9.jpg",
+    "images/proyectos/asics/asics-10.jpg",
+    "images/proyectos/asics/asics-11.jpg",
+    "images/proyectos/asics/asics-12.jpg"
+  ],
+  "proyecto-ay-carmela": [
+    "images/proyectos/ay-carmela/ay-carmela-1.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-2.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-3.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-4.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-5.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-6.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-7.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-8.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-9.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-10.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-11.jpg",
+    "images/proyectos/ay-carmela/ay-carmela-12.jpg"
+  ],
+  "proyecto-kuzzen": [
+    "images/proyectos/kuzzen/kuzzen-1.jpg",
+    "images/proyectos/kuzzen/kuzzen-2.jpg",
+    "images/proyectos/kuzzen/kuzzen-3.jpg",
+    "images/proyectos/kuzzen/kuzzen-4.jpg",
+    "images/proyectos/kuzzen/kuzzen-5.jpg",
+    "images/proyectos/kuzzen/kuzzen-6.jpg",
+    "images/proyectos/kuzzen/kuzzen-7.jpg"
+  ],
+  "proyecto-la-mallorquina": [
+    "images/proyectos/la-mallorquina/la-mallorquina-1.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-2.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-3.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-4.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-5.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-6.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-7.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-8.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-9.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-10.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-11.jpg",
+    "images/proyectos/la-mallorquina/la-mallorquina-12.jpg"
+  ],
+  "proyecto-ph-andersen": [
+    "images/proyectos/ph-andersen/ph-andersen-1.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-2.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-3.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-4.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-5.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-6.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-7.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-8.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-9.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-10.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-11.jpg",
+    "images/proyectos/ph-andersen/ph-andersen-12.jpg"
+  ],
+  "proyecto-porrua": [
+    "images/proyectos/porrua/porrua-1.jpg",
+    "images/proyectos/porrua/porrua-2.jpg",
+    "images/proyectos/porrua/porrua-3.jpg",
+    "images/proyectos/porrua/porrua-4.jpg",
+    "images/proyectos/porrua/porrua-5.jpg"
+  ]
+}
+
+
+
+
+
